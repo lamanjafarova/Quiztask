@@ -1,0 +1,42 @@
+.text {
+  padding: 79px 0;
+  p {text-align: center;
+    font-size: 16px;
+    padding: 16px 0;
+    color: #072125;
+  }
+}
+.team {
+    @media only screen and (max-width: 992px){
+        flex-direction: column;
+    }
+  @include flexBox();
+  flex-wrap: wrap;
+  .about {
+    padding: 28px;
+    margin-top: 64px;
+    img {
+      width: 250px;
+      height: 250px;
+      &:hover{
+          opacity: 0.5;
+          cursor: pointer;
+      }
+    }
+    .logo {
+      text-align: center;
+      padding-top: 20px;
+      border: transparent;
+      border: 1px solid white;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      @include flexBox();
+      i {
+        width: 20px;
+        height: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
